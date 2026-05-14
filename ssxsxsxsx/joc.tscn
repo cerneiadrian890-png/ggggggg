@@ -1,0 +1,155 @@
+[gd_scene format=3 uid="uid://b7mv40jg0y3yh"]
+
+[ext_resource type="ArrayMesh" uid="uid://vjba7v0346xo" path="res://modell_obj.obj" id="1_0o1sf"]
+[ext_resource type="Texture2D" uid="uid://cjsqdron7pch1" path="res://road texture.dds" id="2_js8yg"]
+[ext_resource type="ArrayMesh" uid="uid://bhtvyr6xeohib" path="res://road.obj" id="3_x1pvp"]
+[ext_resource type="PackedScene" uid="uid://b6qysk0hks7kb" path="res://GoodMPublic.blend" id="5_0st08"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_48sff"]
+albedo_texture = ExtResource("2_js8yg")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0o1sf"]
+
+[node name="Node3D" type="Node3D" unique_id=375150928]
+
+[node name="ModellObj" type="MeshInstance3D" parent="." unique_id=109792135]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.317585, 3.1348062, 7.9977064)
+mesh = ExtResource("1_0o1sf")
+
+[node name="Road2" type="MeshInstance3D" parent="." unique_id=1023721235]
+transform = Transform3D(6.9186554, 0, 0, 0, -4.4478903, 0.34555048, 0, -0.9589323, -67.515755, 58.327614, -0.20495927, 12.103552)
+material_override = SubResource("StandardMaterial3D_48sff")
+mesh = ExtResource("3_x1pvp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Road2" unique_id=1005609082]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Road2/StaticBody3D" unique_id=1364943607]
+transform = Transform3D(-2150.2659, 0, 0, 0, -129.33525, 1.5258789e-05, 0, 1.5497208e-06, 1901.9003, 0, 0, 0)
+shape = SubResource("BoxShape3D_0o1sf")
+
+[node name="Road" type="MeshInstance3D" parent="." unique_id=321629883]
+transform = Transform3D(6.146146, 0, 0, 0, 1.0188522, 0, 0, 0, 120.52688, 31.87072, 0, 9.6329975)
+mesh = ExtResource("3_x1pvp")
+
+[node name="Road3" type="MeshInstance3D" parent="." unique_id=952288589]
+transform = Transform3D(8.7394495, 0, 0, 0, -4.9884624, 0, 0, 0, 180.35286, 90.7508, 0.511302, -21.824598)
+mesh = ExtResource("3_x1pvp")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="." unique_id=456685831]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.18675, 3.2450256, -42.317398)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2" unique_id=903738242]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.1805172, -42.317398)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2" unique_id=1114195713]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, -42.317398)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj3" type="MeshInstance3D" parent="ModellObj2/ModellObj2" unique_id=1866042416]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.1805172, -42.317398)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3" unique_id=1820338996]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, -42.317398)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj3" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3" unique_id=23364856]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.1805172, -42.317398)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3" unique_id=156849997]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, -42.317398)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj3" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3" unique_id=958296307]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.1805172, -42.317398)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3/ModellObj3" unique_id=644889372]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, -43.59723)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3/ModellObj3/ModellObj2" unique_id=1774091701]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, 316.49783)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3/ModellObj3/ModellObj2/ModellObj2" unique_id=886339335]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, 56.13771)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3/ModellObj3/ModellObj2/ModellObj2/ModellObj2" unique_id=39055451]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, 56.13771)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3/ModellObj3/ModellObj2/ModellObj2/ModellObj2/ModellObj2" unique_id=55412483]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, 56.13771)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3/ModellObj3/ModellObj2/ModellObj2/ModellObj2/ModellObj2/ModellObj2" unique_id=1863973854]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, 56.13771)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3/ModellObj3/ModellObj2/ModellObj2/ModellObj2/ModellObj2/ModellObj2/ModellObj2" unique_id=616043871]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, 56.13771)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3/ModellObj3/ModellObj2/ModellObj2/ModellObj2/ModellObj2/ModellObj2/ModellObj2/ModellObj2" unique_id=603447442]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, 56.13771)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3/ModellObj3/ModellObj2/ModellObj2/ModellObj2/ModellObj2/ModellObj2/ModellObj2/ModellObj2/ModellObj2" unique_id=1842600668]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, 56.13771)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj4" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3" unique_id=1982240749]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.532173, 0.1805172, 9.215622)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3/ModellObj4" unique_id=567727207]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, -42.317398)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj3" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3/ModellObj4" unique_id=1862416730]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.1805172, -42.317398)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3/ModellObj4/ModellObj3" unique_id=1837545754]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, -43.59723)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3/ModellObj4/ModellObj3/ModellObj2" unique_id=1271102271]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, 316.49783)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3/ModellObj4/ModellObj3/ModellObj2/ModellObj2" unique_id=906876709]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, 56.13771)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3/ModellObj4/ModellObj3/ModellObj2/ModellObj2/ModellObj2" unique_id=655227810]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, 56.13771)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3/ModellObj4/ModellObj3/ModellObj2/ModellObj2/ModellObj2/ModellObj2" unique_id=1591675453]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, 56.13771)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3/ModellObj4/ModellObj3/ModellObj2/ModellObj2/ModellObj2/ModellObj2/ModellObj2" unique_id=1805326196]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, 56.13771)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3/ModellObj4/ModellObj3/ModellObj2/ModellObj2/ModellObj2/ModellObj2/ModellObj2/ModellObj2" unique_id=1867913890]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, 56.13771)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3/ModellObj4/ModellObj3/ModellObj2/ModellObj2/ModellObj2/ModellObj2/ModellObj2/ModellObj2/ModellObj2" unique_id=1360468116]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, 56.13771)
+mesh = ExtResource("1_0o1sf")
+
+[node name="ModellObj2" type="MeshInstance3D" parent="ModellObj2/ModellObj2/ModellObj3/ModellObj3/ModellObj4/ModellObj3/ModellObj2/ModellObj2/ModellObj2/ModellObj2/ModellObj2/ModellObj2/ModellObj2/ModellObj2" unique_id=1992341297]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5016365, 0.4457531, 56.13771)
+mesh = ExtResource("1_0o1sf")
+
+[node name="GoodMPublic" parent="." unique_id=1497367503 instance=ExtResource("5_0st08")]
+transform = Transform3D(-0.9998654, 0, 0.016405322, 0, 1, 0, -0.016405322, 0, -0.9998654, 93.55814, 1.4351501, -18.951653)
